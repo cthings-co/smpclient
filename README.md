@@ -21,6 +21,14 @@ If you'd like an SMP CLI application instead of a library, then you should try
 Documentation is in the source code so that it is available to your editor.
 An online version is generated and available [here](https://intercreate.github.io/smpclient/).
 
+## Wirepas transport
+
+Install the optional native dependencies with `pip install '.[wirepas]'` when
+using the CTHINGS Wirepas transport. Wirepas requires Python 3.11-3.13 and a
+running Wirepas sink service on D-Bus. These dependencies are loaded when
+connecting; importing the transport or using serial, BLE or UDP does not
+require a running D-Bus service.
+
 ## Development Quickstart
 
 > Assumes that you've already [setup your development environment](#development-environment-setup).
