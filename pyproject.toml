@@ -25,6 +25,10 @@ smp = "^3.1.1"
 intelhex = "^2.3.0"
 bleak = "^0.22.1"
 async-timeout = { version = "^4.0.3", python = "<3.11" }
+wsctrl = { version = "^1.0.2", python = ">=3.11,<3.14", optional = true }
+
+[tool.poetry.extras]
+wirepas = ["wsctrl"]
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.3"
